@@ -1,0 +1,106 @@
+
+<html>
+<head>
+  <meta chrset="UTF_8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+  <title>احسبي تكلفة العباية| Dare </title>
+  <style>
+    body {
+      background-color:#f4f4f4;
+      font-family:'segoe UI',sans-serif;
+      direction:rtl;
+      text-align:center;
+      padding:40px;
+      nav>
+        <a href="index.html">الصفحة الرئيسية <\a> |
+        <a href="work.html">أعمالي</a> |
+        <a href="calculator.html">البرنامج الحسابي</a>
+        <\nav>
+    } 
+    .container {
+      max-width:600px;
+      margin:auto;
+      background-color:#fff;
+      padding:30px;
+      broder-radius:15px;
+      box-shadow:00 12px rgba(0,0,0,01);
+    }
+    h1 {
+      color:#222;
+      font-size:22px;
+      margin-bottom:25px;
+    } 
+    label {
+      display:block;
+      margin-top:15px;
+      font-weight:bold;
+    } 
+    in put {
+      width:90٪;
+      padding:10px;
+      margin-top:5px;
+      border-radius:8px;
+      border:1px solid #ccc;
+    } 
+    button {
+      margin-top:25px;
+      padding:12px  20px;
+      background-color:#d81b60;
+      color :white;
+      border:none;
+      border-radius;8px;
+      font-size:16px;
+      cursor:pointer;
+    } 
+    button:hover {
+      background-color:#b9154e;
+    } 
+    result {
+      margin-top:20px;
+      font-size:18px;
+      font-weight:bold;
+      color:#333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>احسبي تكلفة عبايتك مع  Dare to be Different</h1>
+    
+    <labl>عدد الامتار المطـلوبة</labl>
+    <input type="number"id="meters"placeholder="مثلاً=3">
+    
+    <label>(﷼) سعر المتر</label>
+    <input type="number"id="priceper Meter"placeholder="45:مثلاً">
+    
+    <label>(﷼)تكلفة الشحن</label>
+    <input type="number"id="shipping"placeholder="30:مثلاً">
+    
+    <label>(تطريز ، أزرار ،...) اضـافات خاصـة</label>
+    <input type="number"id="extras"placeholder="20:مثلاً">
+    
+    <button onclick="calculate Total ()">احسبي الآن</button>
+    
+    <div class="result"id="total Result"></div>
+    
+    <br><br>
+    <a href="intex.html">العوده الى الصفحة الرئيسية</a>
+    <a href="works.html">أعمـالي</a>
+    <a href="contact.html">تواصل معي</a
+  </div>
+  
+  <script>
+    function calculate Total(){
+      const meters=parse Float(document.get Element By Id('meters').value)||0;
+      const priceper Meter=parse Float(document.get Element By Id('priceper Meter').value)||0;
+      const shipping=parseFloat(document.get Element By Id('shipping').value)||0;
+      const extras=parse Float(document.get Element By Id('extras').value)||0;
+      
+      const total=(meters*price per Meter)+shipping+extras;
+      
+      document.get Element By Id('total Result').inner HTML=
+      ;'﷼{total.tofixed(2)}$=السعر الكلي للعباية'
+    }
+  </script>
+</body>
+</html>
